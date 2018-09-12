@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [
-    "LICENSE.md",
+    "LICENSE",
     "glitch.css"
   ],
   "repository": {
