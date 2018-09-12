@@ -1,0 +1,65 @@
+@keyframes gleft {
+	from {
+		transform: skewX(30deg);
+	}
+	2% {
+		transform: skewX(0deg);
+	}
+}
+
+.gleft {
+	-webkit-animation-name: gleft;
+	animation-name: gleft;
+}
+
+@keyframes gright {
+	from {
+		transform: skewX(-30deg);
+	}
+	2% {
+		transform: skewX(0deg);
+	}
+}
+
+.gright {
+	-webkit-animation-name: gright;
+	animation-name: gright;
+}
+
+@keyframes gbr {
+	from {
+		text-shadow: -10px 0 red,
+                 10px 0 blue,
+                 0 0 skyblue;
+    }
+    2%{
+    	text-shadow: initial;
+    }
+}
+
+.gbr {
+	-webkit-animation-name: gbr;
+	animation-name: gbr;
+}
+
+.glitch {
+	-webkit-animation-duration: 5s;
+	animation-duration: 5s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+.glitch.infinite {
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+
+.glitch.fast {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+}
+
+.glitch.slow {
+	-webkit-animation-duration: 10s;
+	animation-duration: 10s;
+}
