@@ -32,7 +32,7 @@
                  10px 0 blue,
                  0 0 skyblue;
     }
-    2%{
+    2% {
     	text-shadow: initial;
     }
 }
@@ -41,6 +41,44 @@
 	-webkit-animation-name: gbr;
 	animation-name: gbr;
 }
+
+@keyframes gbr-left {
+	from {
+		transform: skewX(30deg);
+		text-shadow: -10px 0 red,
+                 10px 0 blue,
+                 0 0 skyblue;
+    }
+    2% {
+		transform: skewX(0deg);
+    	text-shadow: initial;
+    }
+}
+
+.gbr-left {
+	-webkit-animation-name: gbr-left;
+	animation-name: gbr-left;
+}
+
+@keyframes gbr-right {
+	from {
+		transform: skewX(-30deg);
+		text-shadow: -10px 0 red,
+                 10px 0 blue,
+                 0 0 skyblue;
+    }
+    2% {
+		transform: skewX(0deg);
+    	text-shadow: initial;
+    }
+}
+
+.gbr-right {
+	-webkit-animation-name: gbr-right;
+	animation-name: gbr-right;
+}
+
+/* GLITCH */
 
 .glitch {
 	-webkit-animation-duration: 5s;
